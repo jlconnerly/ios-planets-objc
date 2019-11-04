@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JLCPlanetsCollectionViewController.h
 //  Planets-objc
 //
 //  Created by Jake Connerly on 11/4/19.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface JLCPlanetsCollectionViewController : UICollectionViewController
 
 @end
+
 

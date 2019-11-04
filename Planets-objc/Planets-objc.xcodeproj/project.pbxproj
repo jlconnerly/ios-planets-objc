@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		32533F572370C4F10063B3B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F562370C4F10063B3B8 /* AppDelegate.m */; };
 		32533F5A2370C4F10063B3B8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F592370C4F10063B3B8 /* SceneDelegate.m */; };
-		32533F5D2370C4F10063B3B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F5C2370C4F10063B3B8 /* ViewController.m */; };
 		32533F602370C4F10063B3B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32533F5E2370C4F10063B3B8 /* Main.storyboard */; };
 		32533F622370C4F30063B3B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32533F612370C4F30063B3B8 /* Assets.xcassets */; };
 		32533F652370C4F30063B3B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32533F632370C4F30063B3B8 /* LaunchScreen.storyboard */; };
 		32533F682370C4F30063B3B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F672370C4F30063B3B8 /* main.m */; };
+		32533F702370C6120063B3B8 /* JLCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F6F2370C6120063B3B8 /* JLCPlanetsCollectionViewController.m */; };
+		32533F762370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */; };
+		32533F7A2370CB810063B3B8 /* JLCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F792370CB810063B3B8 /* JLCSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		32533F562370C4F10063B3B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32533F582370C4F10063B3B8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		32533F592370C4F10063B3B8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		32533F5B2370C4F10063B3B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32533F5C2370C4F10063B3B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32533F5F2370C4F10063B3B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32533F612370C4F30063B3B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32533F642370C4F30063B3B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32533F662370C4F30063B3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32533F672370C4F30063B3B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32533F6E2370C6120063B3B8 /* JLCPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		32533F6F2370C6120063B3B8 /* JLCPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		32533F742370C74C0063B3B8 /* JLCPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		32533F782370CB810063B3B8 /* JLCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCSettingsViewController.h; sourceTree = "<group>"; };
+		32533F792370CB810063B3B8 /* JLCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +67,55 @@
 		32533F542370C4F10063B3B8 /* Planets-objc */ = {
 			isa = PBXGroup;
 			children = (
+				32533F772370C7650063B3B8 /* Views */,
+				32533F712370C6250063B3B8 /* ViewControllers */,
+				32533F732370C64B0063B3B8 /* Storyboards */,
+				32533F722370C6340063B3B8 /* Resources */,
+				32533F662370C4F30063B3B8 /* Info.plist */,
+			);
+			path = "Planets-objc";
+			sourceTree = "<group>";
+		};
+		32533F712370C6250063B3B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32533F6E2370C6120063B3B8 /* JLCPlanetsCollectionViewController.h */,
+				32533F6F2370C6120063B3B8 /* JLCPlanetsCollectionViewController.m */,
+				32533F782370CB810063B3B8 /* JLCSettingsViewController.h */,
+				32533F792370CB810063B3B8 /* JLCSettingsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32533F722370C6340063B3B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				32533F552370C4F10063B3B8 /* AppDelegate.h */,
 				32533F562370C4F10063B3B8 /* AppDelegate.m */,
 				32533F582370C4F10063B3B8 /* SceneDelegate.h */,
 				32533F592370C4F10063B3B8 /* SceneDelegate.m */,
-				32533F5B2370C4F10063B3B8 /* ViewController.h */,
-				32533F5C2370C4F10063B3B8 /* ViewController.m */,
-				32533F5E2370C4F10063B3B8 /* Main.storyboard */,
 				32533F612370C4F30063B3B8 /* Assets.xcassets */,
-				32533F632370C4F30063B3B8 /* LaunchScreen.storyboard */,
-				32533F662370C4F30063B3B8 /* Info.plist */,
 				32533F672370C4F30063B3B8 /* main.m */,
 			);
-			path = "Planets-objc";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32533F732370C64B0063B3B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				32533F5E2370C4F10063B3B8 /* Main.storyboard */,
+				32533F632370C4F30063B3B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32533F772370C7650063B3B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32533F742370C74C0063B3B8 /* JLCPlanetCollectionViewCell.h */,
+				32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32533F5D2370C4F10063B3B8 /* ViewController.m in Sources */,
 				32533F572370C4F10063B3B8 /* AppDelegate.m in Sources */,
+				32533F7A2370CB810063B3B8 /* JLCSettingsViewController.m in Sources */,
 				32533F682370C4F30063B3B8 /* main.m in Sources */,
+				32533F702370C6120063B3B8 /* JLCPlanetsCollectionViewController.m in Sources */,
 				32533F5A2370C4F10063B3B8 /* SceneDelegate.m in Sources */,
+				32533F762370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
