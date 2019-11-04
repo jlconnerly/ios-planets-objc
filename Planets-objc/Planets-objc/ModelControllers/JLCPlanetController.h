@@ -10,7 +10,9 @@
 
 @interface JLCPlanetController : NSObject
 
-@property NSArray *planets;
+@property NSMutableArray *planets;
+@property BOOL shouldShowPluto;
+
 
 @end
 

@@ -11,7 +11,6 @@
 @interface JLCPlanetCollectionViewCell : UICollectionViewCell
 
 @property (weak) IBOutlet UIImageView *imageView;
-@property (weak) IBOutlet UILabel; *planetNameLabel;
 
 @end
 
