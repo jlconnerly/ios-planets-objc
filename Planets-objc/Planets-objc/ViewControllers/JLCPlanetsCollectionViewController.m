@@ -7,6 +7,9 @@
 //
 
 #import "JLCPlanetsCollectionViewController.h"
+#import "JLCPlanetCollectionViewCell.h"
+#import "JLCPlanetController.h"
+#import "JLCPlanet.h"
 
 @interface JLCPlanetsCollectionViewController ()
 
@@ -14,41 +17,33 @@
 
 @implementation JLCPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _planetController = [[JLCPlanetController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    NSLog(@"planets count %lu", self.planetController.planets.count);
+    return self.planetController.planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    JLCPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
-    // Configure the cell
+    JLCPlanet *planet = [self.planetController.planets objectAtIndex:indexPath.item];
+    
+    cell.planetNameLabel.text = planet.planetName;
+    cell.imageView.image = planet.planetImage;
     
     return cell;
 }

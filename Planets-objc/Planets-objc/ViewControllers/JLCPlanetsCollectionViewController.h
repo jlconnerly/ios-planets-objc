@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class JLCPlanetController;
 
 @interface JLCPlanetsCollectionViewController : UICollectionViewController
+
+@property JLCPlanetController *planetController;
 
 @end
 

@@ -99,7 +99,6 @@
                                 <rect key="frame" x="357" y="20" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="doneTapped:" destination="R2d-xk-JL5" eventType="touchUpInside" id="BXf-bS-lAG"/>
                                     <action selector="doneWasTapped:" destination="R2d-xk-JL5" eventType="touchUpInside" id="68d-es-cZH"/>
                                 </connections>
                             </button>
@@ -109,7 +108,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWa-Pf-zJo">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kWa-Pf-zJo">
                                 <rect key="frame" x="183" y="217" width="49" height="31"/>
                             </switch>
                         </subviews>
@@ -128,7 +127,6 @@
                         <viewLayoutGuide key="safeArea" id="gmG-2d-Op0"/>
                     </view>
                     <connections>
-                        <outlet property="doneTapped" destination="GGm-X8-zxS" id="DQ6-UI-rYi"/>
                         <outlet property="isPlutoSwitch" destination="kWa-Pf-zJo" id="tOf-su-gfg"/>
                     </connections>
                 </viewController>
