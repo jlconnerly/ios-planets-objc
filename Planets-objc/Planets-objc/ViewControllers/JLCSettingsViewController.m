@@ -29,6 +29,10 @@
 }
 */
 
-- (IBAction)doneTapped:(id)sender {
+- (IBAction)doneWasTapped:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setBool:_isPlutoSwitch.isOn forKey:@"shouldShowPluto"];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
