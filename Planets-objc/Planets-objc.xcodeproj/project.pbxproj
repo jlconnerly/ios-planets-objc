@@ -16,6 +16,8 @@
 		32533F702370C6120063B3B8 /* JLCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F6F2370C6120063B3B8 /* JLCPlanetsCollectionViewController.m */; };
 		32533F762370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */; };
 		32533F7A2370CB810063B3B8 /* JLCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F792370CB810063B3B8 /* JLCSettingsViewController.m */; };
+		32533F822370D3070063B3B8 /* JLCPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F812370D3070063B3B8 /* JLCPlanet.m */; };
+		32533F852370D3210063B3B8 /* JLCPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32533F842370D3210063B3B8 /* JLCPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		32533F782370CB810063B3B8 /* JLCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCSettingsViewController.h; sourceTree = "<group>"; };
 		32533F792370CB810063B3B8 /* JLCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCSettingsViewController.m; sourceTree = "<group>"; };
+		32533F802370D3070063B3B8 /* JLCPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCPlanet.h; sourceTree = "<group>"; };
+		32533F812370D3070063B3B8 /* JLCPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCPlanet.m; sourceTree = "<group>"; };
+		32533F832370D3210063B3B8 /* JLCPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLCPlanetController.h; sourceTree = "<group>"; };
+		32533F842370D3210063B3B8 /* JLCPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLCPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		32533F542370C4F10063B3B8 /* Planets-objc */ = {
 			isa = PBXGroup;
 			children = (
+				32533F7F2370D2E70063B3B8 /* Models */,
+				32533F7B2370D2820063B3B8 /* ModelControllers */,
 				32533F772370C7650063B3B8 /* Views */,
 				32533F712370C6250063B3B8 /* ViewControllers */,
 				32533F732370C64B0063B3B8 /* Storyboards */,
@@ -116,6 +124,24 @@
 				32533F752370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		32533F7B2370D2820063B3B8 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32533F832370D3210063B3B8 /* JLCPlanetController.h */,
+				32533F842370D3210063B3B8 /* JLCPlanetController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		32533F7F2370D2E70063B3B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32533F802370D3070063B3B8 /* JLCPlanet.h */,
+				32533F812370D3070063B3B8 /* JLCPlanet.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32533F572370C4F10063B3B8 /* AppDelegate.m in Sources */,
+				32533F852370D3210063B3B8 /* JLCPlanetController.m in Sources */,
 				32533F7A2370CB810063B3B8 /* JLCSettingsViewController.m in Sources */,
 				32533F682370C4F30063B3B8 /* main.m in Sources */,
+				32533F822370D3070063B3B8 /* JLCPlanet.m in Sources */,
 				32533F702370C6120063B3B8 /* JLCPlanetsCollectionViewController.m in Sources */,
 				32533F5A2370C4F10063B3B8 /* SceneDelegate.m in Sources */,
 				32533F762370C74C0063B3B8 /* JLCPlanetCollectionViewCell.m in Sources */,
